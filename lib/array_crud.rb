@@ -19,7 +19,7 @@ def remove_element_from_end_of_array(array)
 end
 
 def remove_element_from_start_of_array(array)
-  array.unshift
+  array.unshift()
 end
 
 def retrieve_element_from_index(array, index_number)
@@ -31,7 +31,8 @@ def retrieve_first_element_from_array(array)
 end
 
 def retrieve_last_element_from_array(array)
-  p array.delete([array.length - 1])
+  last_element = (array.length - 1)
+  p array[last_element]
 end
 
 def update_element_from_index(array, index_number, element)
